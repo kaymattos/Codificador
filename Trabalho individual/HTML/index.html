@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../CSS/style.css" />
+    <title>Cripito Kay</title>
+  </head>
+  <body>
+    <header>
+      <div class="form segundo">
+        <center>
+          <h1>CRIPITO KAY</h1>
+        </center>
+        <div class="branco">
+          <section>
+            <input
+              id="cifradecesar"
+              type="radio"
+              name="codetype"
+              value="cifradecesar"
+            />
+            <label for="base64">Cifra de César</label>
+            <input
+              id="base64"
+              type="radio"
+              name="codetype"
+              value="base64"
+              checked
+            />
+            <label for="base64">Base64</label>
+          </section>
+          <br />
+          <br />
+        </div>
+      </div>
+    </header>
+    <main>
+      <div class="form">
+        <div class="primeiro">
+          <textarea
+            cols="50"
+            rows="10"
+            class="primeiro"
+            id="textoBruto"
+            placeholder="Mensagem..."
+          ></textarea>
+        </div>
+        <br />
+        <section id="incremento">
+          <label for="incrementar"></label>
+          <input
+            type="number"
+            id="incrementacao"
+            min="1"
+            max="25"
+            name="incrementar"
+            class="lua"
+            placeholder="Incremento"
+          />
+        </section>
+
+        <br />
+        <div class="quarto">
+          <button type="submit" onclick="btnCod()">Codificar</button>
+          <button onclick="btnDeco()">Decodificar</button>
+        </div>
+        <br />
+        <div class="quinto">
+          <textarea
+            name="mensagem"
+            id="textoCodificado"
+            cols="50"
+            rows="10"
+            class="primeiro"
+            placeholder="Resultado:"
+          ></textarea>
+        </div>
+      </div>
+    </main>
+    <script src="../JS/script.js"></script>
+  </body>
+</html>
